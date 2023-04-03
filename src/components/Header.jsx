@@ -27,7 +27,7 @@ const Header = () => {
       </div>
       <div className="flex flex-1 items-center gap-2 border p-3 rounded-lg">
         <input
-          className="outline-none flex-1"
+          className="outline-none flex-1 bg-transparent "
           type="text"
           placeholder="Search"
         />

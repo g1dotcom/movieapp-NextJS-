@@ -5,6 +5,7 @@ import "./globals.css";
 
 //components
 import Header from "@/components/Header";
+import Providers from "./Providers";
 
 const layout = ({ children }) => {
   return (
