@@ -1,7 +1,10 @@
+//Next Link
+import Link from "next/link";
+
 import React from "react";
 
 const MenuItem = ({ mn }) => {
-  return <div>{mn.name}</div>;
+  return <Link href={mn.url}>{mn.name}</Link>;
 };
 
 export default MenuItem;
