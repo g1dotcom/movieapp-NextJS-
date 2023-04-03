@@ -5,8 +5,10 @@ import { BiSearch } from "react-icons/bi";
 
 //components
 import MenuItem from "./MenuItem";
+import ThemeComp from "./ThemeComp";
 
 const Header = () => {
+  //PAGES MENU
   const menu = [
     {
       name: "About",
@@ -31,6 +33,7 @@ const Header = () => {
         />
         <BiSearch size={25} />
       </div>
+      <ThemeComp />
       {menu.map((mn, i) => (
         <MenuItem mn={mn} key={i} />
       ))}
