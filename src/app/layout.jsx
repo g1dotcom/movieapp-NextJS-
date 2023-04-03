@@ -1,10 +1,18 @@
 import React from "react";
+
+//Css
 import "./globals.css";
+
+//components
+import Header from "@/components/Header";
 
 const layout = ({ children }) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 };
