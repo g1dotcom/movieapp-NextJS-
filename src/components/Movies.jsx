@@ -10,7 +10,10 @@ const Movies = ({ dt }) => {
 
   console.log(dt);
   return (
-    <div className="min-w-[470px] relative  imgContainer cursor-pointer">
+    <div
+      onClick={() => router.push(`/movie/${dt?.id}`)}
+      className="min-w-[470px] relative  imgContainer cursor-pointer"
+    >
       <Image
         width={470}
         height={300}
@@ -19,9 +22,9 @@ const Movies = ({ dt }) => {
         }`}
       />
       <div className="absolute bottom-0 p-3 w-full h-full flex flex-col justify-end opacity-0 hover:opacity-100 transition-opacity duration-700">
-        <div className="text-2xl font-bold">{dt.title}</div>
+        <div className="text-2xl font-bold">{dt?.title}</div>
         <div className="">
-          {dt.release_date} - {dt.vote_average}
+          {dt?.release_date} - {dt?.vote_average}
         </div>
       </div>
     </div>
