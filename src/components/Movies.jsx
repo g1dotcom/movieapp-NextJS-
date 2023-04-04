@@ -15,6 +15,7 @@ const Movies = ({ dt }) => {
       className="min-w-[470px] relative  imgContainer cursor-pointer"
     >
       <Image
+        style={{ objectFit: "cover" }}
         width={470}
         height={300}
         src={`https://image.tmdb.org/t/p/original/${
